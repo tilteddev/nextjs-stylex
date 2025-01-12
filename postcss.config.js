@@ -11,7 +11,6 @@ const fs = require('fs');
 const path = require('path');
 
 const projectRoot = __dirname;
-const monorepoRoot = path.join(projectRoot, '../../');
 
 function getPackageIncludePaths(packageName, nodeModulePaths) {
   let packagePath = null;
@@ -39,17 +38,12 @@ function getPackageIncludePaths(packageName, nodeModulePaths) {
 
 const openPropsIncludePaths = getPackageIncludePaths('@stylexjs/open-props', [
   path.join(projectRoot, 'node_modules'),
-  path.join(monorepoRoot, 'node_modules'),
 ]);
 
 module.exports = {
   plugins: {
     '@stylexjs/postcss-plugin': {
-      include: [
-        'app/**/*.{js,jsx,ts,tsx}',
-        'components/**/*.{js,jsx,ts,tsx}',
-        ...openPropsIncludePaths,
-      ],
+      include: ['src/**/*.{js,jsx,ts,tsx}', ...openPropsIncludePaths],
       useCSSLayers: true,
     },
     autoprefixer: {},

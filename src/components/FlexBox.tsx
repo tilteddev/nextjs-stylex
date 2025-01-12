@@ -1,5 +1,5 @@
 'use client';
-import { colors } from '../../styles.stylex';
+import { colors } from '../styles.stylex';
 import * as stylex from '@stylexjs/stylex';
 
 const FlexBoxStyles = stylex.create({
