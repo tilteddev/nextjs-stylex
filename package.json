@@ -1,0 +1,38 @@
+{
+  "name": "nextjs_stylex",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "rimraf .next && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@stylexjs/open-props": "^0.10.0",
+    "@stylexjs/stylex": "^0.10.0",
+    "autoprefixer": "^10.4.20",
+    "next": "15.1.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.26.0",
+    "@eslint/eslintrc": "^3",
+    "@stylexjs/eslint-plugin": "^0.10.0",
+    "@stylexjs/postcss-plugin": "0.10.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "next/typescript",
+        "prettier"
+    ],
+    "plugins": ["react", "@stylexjs"],
+    "rules": {
+        "no-duplicate-imports": "error",
+        "import/no-unresolved": "error",
+        "no-alert": "error",
+        "no-debugger": "error",
+        "react/jsx-no-undef": "error",
+        "react/self-closing-comp": "error",
+        "react-hooks/rules-of-hooks": "error",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "_"
+            }
+        ],
+        // stylex
+        "@stylexjs/valid-styles": "error",
+        "@stylexjs/no-unused": "error",
+        "@stylexjs/valid-shorthands": "warning",
+        "@stylexjs/sort-keys": "warning"
+    }
+}
